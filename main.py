@@ -95,9 +95,9 @@ def main():
         desc = item.get("description", "")
         item_from = mask_account_card(str(item.get("from", "")))
         item_to = mask_account_card(str(item.get("to", "")))
-        if user_choice_file == "1":
-            amount = str(item["operationAmount"].get("amount", ""))
-            currency = item["operationAmount"]["currency"].get("code", "")
+        if user_choice_file == '1':
+            amount = str(item['operationAmount'].get("amount", ""))
+            currency = item['operationAmount']['currency'].get("code", "")
         else:
             amount = str(item.get("amount", ""))
             currency = item.get("currency_code", "")
